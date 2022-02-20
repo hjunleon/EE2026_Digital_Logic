@@ -1,0 +1,111 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Apr  1 14:14:50 2021
+| Host         : DESKTOP-KAOI2E3 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_Student_control_sets_placed.rpt
+| Design       : Top_Student
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    42 |
+| Unused register locations in slices containing registers |   144 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      4 |            9 |
+|      8 |            1 |
+|     10 |            1 |
+|     14 |            2 |
+|    16+ |           28 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             256 |           63 |
+| No           | No                    | Yes                    |              26 |            4 |
+| No           | Yes                   | No                     |             790 |          118 |
+| Yes          | No                    | No                     |              38 |            7 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             186 |           28 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------+------------------------------------------+------------------------------------------+------------------+----------------+
+|             Clock Signal             |               Enable Signal              |             Set/Reset Signal             | Slice Load Count | Bel Load Count |
++--------------------------------------+------------------------------------------+------------------------------------------+------------------+----------------+
+| ~clk_BUFG                            |                                          |                                          |                1 |              2 |
+|  menudisplay/menuselect/sclock/Q_reg |                                          |                                          |                1 |              4 |
+|  resetbutton/sclock/CLOCK            |                                          |                                          |                1 |              4 |
+|  menudisplay/frames/CLK              |                                          |                                          |                2 |              4 |
+|  menudisplay/left/sclock/CLOCK       |                                          |                                          |                2 |              4 |
+|  menudisplay/right/sclock/Q_reg      |                                          |                                          |                1 |              4 |
+|  menudisplay/select/sclock/Q_reg     |                                          |                                          |                1 |              4 |
+|  goku_game/frames/CLK                |                                          |                                          |                1 |              4 |
+|  volumebar/shiftleft/sclock/CLOCK    |                                          |                                          |                1 |              4 |
+|  volumebar/shiftright/sclock/Q_reg   |                                          |                                          |                1 |              4 |
+|  volume/slowclk/CLK                  |                                          |                                          |                3 |              8 |
+|  menudisplay/sclock/SCLOCK           |                                          |                                          |                2 |             10 |
+|  goku_game/frames/CLK                | goku_game/progress0                      | menudisplay/SR[0]                        |                2 |             14 |
+|  volumebar/sclock/CLK                | volumebar/shiftleft/dff2/E[0]            |                                          |                3 |             14 |
+|  CLK100MHZ_IBUF_BUFG                 |                                          | clk20khz/count[11]_i_1_n_0               |                3 |             22 |
+| ~audio/J_MIC3_Pin4_OBUF              |                                          |                                          |                4 |             24 |
+|  CLK100MHZ_IBUF_BUFG                 | volume/nolabel_line78/max_in[11]_i_1_n_0 |                                          |                4 |             24 |
+|  CLK100MHZ_IBUF_BUFG                 |                                          | J_MIC3_Pin1_OBUF_BUFG                    |                3 |             24 |
+|  dip_freq/segmentclk/CLK             |                                          |                                          |                6 |             26 |
+|  freq/SOUNDPERIOD                    |                                          | freq/SOUNDRESET                          |                4 |             26 |
+|  volume/segmentclk/seg_reg[6]        |                                          |                                          |                6 |             26 |
+|  J_MIC3_Pin1_OBUF_BUFG               |                                          |                                          |                7 |             28 |
+|  CLK100MHZ_IBUF_BUFG                 |                                          | dip_freq/segmentclk/count[17]_i_1__0_n_0 |                5 |             34 |
+|  CLK100MHZ_IBUF_BUFG                 |                                          | volume/segmentclk/count[17]_i_1_n_0      |                5 |             34 |
+| ~clk_BUFG                            |                                          | resetbutton/dff1/reset                   |                5 |             34 |
+| ~clk_BUFG                            | oled/delay[0]_i_1_n_0                    | resetbutton/dff1/reset                   |                5 |             40 |
+|  CLK100MHZ_IBUF_BUFG                 |                                          | resetbutton/sclock/SCLOCK0               |                7 |             44 |
+|  CLK100MHZ_IBUF_BUFG                 |                                          | menudisplay/left/sclock/SCLOCK0          |                6 |             44 |
+|  CLK100MHZ_IBUF_BUFG                 |                                          | volumebar/sclock/SCLOCK0                 |                7 |             44 |
+|  CLK100MHZ_IBUF_BUFG                 |                                          | volumebar/shiftright/sclock/SCLOCK0      |                6 |             44 |
+|  CLK100MHZ_IBUF_BUFG                 |                                          | volumebar/shiftleft/sclock/SCLOCK0       |                6 |             44 |
+|  CLK100MHZ_IBUF_BUFG                 |                                          | menudisplay/select/sclock/SCLOCK0        |                7 |             44 |
+|  CLK100MHZ_IBUF_BUFG                 |                                          | menudisplay/right/sclock/SCLOCK0         |                6 |             44 |
+|  CLK100MHZ_IBUF_BUFG                 |                                          | menudisplay/sclock/SCLOCK0               |                7 |             44 |
+|  CLK100MHZ_IBUF_BUFG                 |                                          | menudisplay/menuselect/sclock/SCLOCK0    |                7 |             44 |
+|  CLK100MHZ_IBUF_BUFG                 |                                          | menudisplay/frames/SCLOCK0               |                6 |             46 |
+|  CLK100MHZ_IBUF_BUFG                 |                                          | goku_game/frames/SCLOCK0                 |                6 |             46 |
+|  J_MIC3_Pin1_OBUF_BUFG               |                                          | freq/clear                               |                8 |             64 |
+| ~clk_BUFG                            | oled/state                               | resetbutton/dff1/reset                   |               10 |             64 |
+|  J_MIC3_Pin1_OBUF_BUFG               | freq/clear                               | freq/FREQ[15]_i_1_n_0                    |               11 |             68 |
+| ~clk_BUFG                            |                                          | oled/spi_word[39]_i_1_n_0                |               18 |             90 |
+|  CLK100MHZ_IBUF_BUFG                 |                                          |                                          |               23 |             96 |
++--------------------------------------+------------------------------------------+------------------------------------------+------------------+----------------+
+
+

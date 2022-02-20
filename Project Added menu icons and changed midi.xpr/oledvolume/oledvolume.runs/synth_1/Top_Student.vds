@@ -1,0 +1,1020 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Apr  5 03:52:43 2021
+# Process ID: 25556
+# Current directory: D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.runs/synth_1
+# Command line: vivado.exe -log Top_Student.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Student.tcl
+# Log file: D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.runs/synth_1/Top_Student.vds
+# Journal file: D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Top_Student.tcl -notrace
+Command: synth_design -top Top_Student -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11260 
+WARNING: [Synth 8-2611] redeclaration of ansi port needed_freq is not allowed [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/note_determiner.v:31]
+WARNING: [Synth 8-2611] redeclaration of ansi port freq_off is not allowed [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/note_determiner.v:32]
+WARNING: [Synth 8-2142] illegal initial value of output port freq_off for module note_determiner ignored [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/note_determiner.v:27]
+WARNING: [Synth 8-2142] illegal initial value of output port needed_freq for module note_determiner ignored [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/note_determiner.v:28]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 369.879 ; gain = 112.945
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_Student' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/imports/EE2026/Lab 5 Project/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:18]
+INFO: [Synth 8-6157] synthesizing module 'clk20k' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/imports/EE2026/Lab 5 Project/SoundDisplay/SoundDisplay.srcs/sources_1/new/clk20k.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clk20k' (1#1) [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/imports/EE2026/Lab 5 Project/SoundDisplay/SoundDisplay.srcs/sources_1/new/clk20k.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_custom' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/clk_custom.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clk_custom' (2#1) [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/clk_custom.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Audio_Capture' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/imports/EE2026/Lab 5 Project/SoundDisplay/SoundDisplay.srcs/sources_1/new/Audio_Capture.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'Audio_Capture' (3#1) [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/imports/EE2026/Lab 5 Project/SoundDisplay/SoundDisplay.srcs/sources_1/new/Audio_Capture.v:25]
+INFO: [Synth 8-6157] synthesizing module 'menu' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/menu.v:23]
+	Parameter BLACK bound to: 16'b0000000000000000 
+	Parameter WHITE bound to: 16'b1111111111111111 
+	Parameter CYAN bound to: 16'b0000011111111101 
+	Parameter RED bound to: 16'b1111100000000000 
+	Parameter YELLOW bound to: 16'b1111111111100000 
+	Parameter GREEN bound to: 16'b0000011111100000 
+INFO: [Synth 8-6157] synthesizing module 'slow_blinky_module' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/imports/EE2026/Lab 3/blinky/blinky.srcs/sources_1/new/slow_blinky.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'slow_blinky_module' (4#1) [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/imports/EE2026/Lab 3/blinky/blinky.srcs/sources_1/new/slow_blinky.v:23]
+INFO: [Synth 8-6157] synthesizing module 'flipflop' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/imports/EE2026/Lab 4/Single_pulse_debouncer/Single_pulse_debouncer.srcs/sources_1/new/flipflop.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dflipflop' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/imports/EE2026/Lab 4/Single_pulse_debouncer/Single_pulse_debouncer.srcs/sources_1/new/dflipflop.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dflipflop' (5#1) [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/imports/EE2026/Lab 4/Single_pulse_debouncer/Single_pulse_debouncer.srcs/sources_1/new/dflipflop.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'flipflop' (6#1) [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/imports/EE2026/Lab 4/Single_pulse_debouncer/Single_pulse_debouncer.srcs/sources_1/new/flipflop.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk4hz' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/clk4hz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clk4hz' (7#1) [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/clk4hz.v:23]
+INFO: [Synth 8-6157] synthesizing module 'menu_vol' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/menu_vol.v:23]
+	Parameter BLACK bound to: 16'b0000000000000000 
+	Parameter WHITE bound to: 16'b1111111111111111 
+	Parameter CYAN bound to: 16'b0000011111111101 
+	Parameter RED bound to: 16'b1111100000000000 
+	Parameter YELLOW bound to: 16'b1111111111100000 
+	Parameter GREEN bound to: 16'b0000011111100000 
+INFO: [Synth 8-6155] done synthesizing module 'menu_vol' (8#1) [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/menu_vol.v:23]
+INFO: [Synth 8-6157] synthesizing module 'menu_music' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/menu_music.v:23]
+	Parameter BLACK bound to: 16'b0000000000000000 
+	Parameter WHITE bound to: 16'b1111111111111111 
+	Parameter CYAN bound to: 16'b0000011111111101 
+	Parameter RED bound to: 16'b1111100000000000 
+	Parameter YELLOW bound to: 16'b1111111111100000 
+	Parameter GREEN bound to: 16'b0000011111100000 
+INFO: [Synth 8-6155] done synthesizing module 'menu_music' (9#1) [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/menu_music.v:23]
+INFO: [Synth 8-6157] synthesizing module 'menu_goku' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/menu_goku.v:23]
+	Parameter BLACK bound to: 16'b0000000000000000 
+	Parameter WHITE bound to: 16'b1111111111111111 
+	Parameter CYAN bound to: 16'b0000011111111101 
+	Parameter RED bound to: 16'b1111100000000000 
+	Parameter YELLOW bound to: 16'b1111111111100000 
+	Parameter GREEN bound to: 16'b0000011111100000 
+INFO: [Synth 8-6155] done synthesizing module 'menu_goku' (10#1) [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/menu_goku.v:23]
+INFO: [Synth 8-6157] synthesizing module 'menu_midi' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/menu_midi.v:23]
+	Parameter BLACK bound to: 16'b0000000000000000 
+	Parameter WHITE bound to: 16'b1111111111111111 
+	Parameter CYAN bound to: 16'b0000011111111101 
+	Parameter RED bound to: 16'b1111100000000000 
+	Parameter YELLOW bound to: 16'b1111111111100000 
+	Parameter GREEN bound to: 16'b0000011111100000 
+INFO: [Synth 8-6155] done synthesizing module 'menu_midi' (11#1) [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/menu_midi.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'menu' (12#1) [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/menu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'volumedisplay' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/volumedisplay.v:23]
+	Parameter null bound to: 7'b1111111 
+	Parameter zero bound to: 7'b1000000 
+	Parameter one bound to: 7'b1111001 
+	Parameter two bound to: 7'b0100100 
+	Parameter three bound to: 7'b0110000 
+	Parameter four bound to: 7'b0011001 
+	Parameter five bound to: 7'b0010010 
+	Parameter six bound to: 7'b0000010 
+	Parameter seven bound to: 7'b1111000 
+	Parameter eight bound to: 7'b0000000 
+	Parameter nine bound to: 7'b0010000 
+	Parameter L bound to: 7'b1000111 
+	Parameter M bound to: 7'b1101010 
+	Parameter H bound to: 7'b0001001 
+INFO: [Synth 8-6157] synthesizing module 'clk381hz' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/imports/EE2026/Lab 5 Project/safe_seg/safe_seg.srcs/sources_1/new/clk381hz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clk381hz' (13#1) [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/imports/EE2026/Lab 5 Project/safe_seg/safe_seg.srcs/sources_1/new/clk381hz.v:23]
+INFO: [Synth 8-6157] synthesizing module 'segmentdisplay' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/segmentdisplay.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'segmentdisplay' (14#1) [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/segmentdisplay.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk8hz' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/clk12hz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clk8hz' (15#1) [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/clk12hz.v:23]
+INFO: [Synth 8-6157] synthesizing module 'maxvolume' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/maxvolume.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'maxvolume' (16#1) [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/maxvolume.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'volumedisplay' (17#1) [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/volumedisplay.v:23]
+INFO: [Synth 8-6157] synthesizing module 'multiplexer' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/imports/EE2026/Lab 5 Project/SoundDisplay/SoundDisplay.srcs/sources_1/new/multiplexer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'multiplexer' (18#1) [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/imports/EE2026/Lab 5 Project/SoundDisplay/SoundDisplay.srcs/sources_1/new/multiplexer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'oledvolume' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/oledvolume.v:23]
+	Parameter RED bound to: 16'b1111100000000000 
+	Parameter YELLOW bound to: 16'b1111111111100000 
+	Parameter GREEN bound to: 16'b0000011111100000 
+	Parameter ORANGE bound to: 16'b1111101111100000 
+	Parameter AQUAMARINE bound to: 16'b1000011111111100 
+	Parameter BLUE bound to: 16'b0000001110011100 
+	Parameter WHITE bound to: 16'b1111111111111111 
+	Parameter PINK bound to: 16'b1111101100011000 
+	Parameter BLACK bound to: 16'b0000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'oledvolume' (19#1) [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/oledvolume.v:23]
+INFO: [Synth 8-6157] synthesizing module 'supersaiyan' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/supersaiyan.v:23]
+INFO: [Synth 8-6157] synthesizing module 'goku_display' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/goku_display.v:23]
+	Parameter RED bound to: 16'b1111100000000000 
+	Parameter YELLOW bound to: 16'b1111111111100000 
+	Parameter GREEN bound to: 16'b0000011111100000 
+	Parameter ORANGE bound to: 16'b1111101111100000 
+	Parameter AQUAMARINE bound to: 16'b1000011111111100 
+	Parameter BLUE bound to: 16'b0000001110011100 
+	Parameter GREY bound to: 16'b1011110111110111 
+	Parameter WHITE bound to: 16'b1111111111111111 
+	Parameter PINK bound to: 16'b1111101100011000 
+	Parameter BLACK bound to: 16'b0000000000000000 
+	Parameter SILVER bound to: 16'b1100011000011000 
+	Parameter BEIGE bound to: 16'b1100111000110001 
+INFO: [Synth 8-6155] done synthesizing module 'goku_display' (20#1) [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/goku_display.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'supersaiyan' (21#1) [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/supersaiyan.v:23]
+INFO: [Synth 8-6157] synthesizing module 'midi_display' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:23]
+	Parameter RED bound to: 16'b1111100000000000 
+	Parameter YELLOW bound to: 16'b1111111111100000 
+	Parameter GREEN bound to: 16'b0000011111100000 
+	Parameter ORANGE bound to: 16'b1111101111100000 
+	Parameter AQUAMARINE bound to: 16'b1000011111111100 
+	Parameter BLUE bound to: 16'b0000001110011100 
+	Parameter GREY bound to: 16'b1011110111110111 
+	Parameter WHITE bound to: 16'b1111111111111111 
+	Parameter PINK bound to: 16'b1111101100011000 
+	Parameter BLACK bound to: 16'b0000000000000000 
+	Parameter SILVER bound to: 16'b1100011000011000 
+	Parameter BEIGE bound to: 16'b1100111000110001 
+WARNING: [Synth 8-324] index 10 out of range [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:87]
+WARNING: [Synth 8-324] index 10 out of range [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:100]
+WARNING: [Synth 8-324] index 10 out of range [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:113]
+WARNING: [Synth 8-324] index 10 out of range [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:126]
+WARNING: [Synth 8-324] index 10 out of range [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:139]
+WARNING: [Synth 8-324] index 10 out of range [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:152]
+WARNING: [Synth 8-324] index 10 out of range [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:165]
+WARNING: [Synth 8-324] index 10 out of range [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:178]
+WARNING: [Synth 8-324] index 10 out of range [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:191]
+WARNING: [Synth 8-324] index 10 out of range [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:204]
+WARNING: [Synth 8-324] index 10 out of range [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:217]
+WARNING: [Synth 8-324] index 10 out of range [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:230]
+INFO: [Synth 8-6155] done synthesizing module 'midi_display' (22#1) [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mic_freq' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/mic_freq.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'mic_freq' (23#1) [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/mic_freq.v:22]
+INFO: [Synth 8-6157] synthesizing module 'note_determiner' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/note_determiner.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'note_determiner' (24#1) [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/note_determiner.v:23]
+INFO: [Synth 8-6157] synthesizing module 'display_freq' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/display_freq.v:23]
+	Parameter null bound to: 7'b1111111 
+	Parameter zero bound to: 7'b1000000 
+	Parameter one bound to: 7'b1111001 
+	Parameter two bound to: 7'b0100100 
+	Parameter three bound to: 7'b0110000 
+	Parameter four bound to: 7'b0011001 
+	Parameter five bound to: 7'b0010010 
+	Parameter six bound to: 7'b0000010 
+	Parameter seven bound to: 7'b1111000 
+	Parameter eight bound to: 7'b0000000 
+	Parameter nine bound to: 7'b0010000 
+	Parameter a bound to: 7'b0001000 
+	Parameter b bound to: 7'b0000011 
+	Parameter c bound to: 7'b1000110 
+	Parameter d bound to: 7'b0100001 
+	Parameter e bound to: 7'b0000110 
+	Parameter f bound to: 7'b0001110 
+	Parameter g bound to: 7'b0010000 
+INFO: [Synth 8-6155] done synthesizing module 'display_freq' (25#1) [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/display_freq.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tuner' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/tuner.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'tuner' (26#1) [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/tuner.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tuner_display' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/tuner_display.v:23]
+	Parameter RED bound to: 16'b1111100000000000 
+	Parameter YELLOW bound to: 16'b1111111111100000 
+	Parameter GREEN bound to: 16'b0000011111100000 
+	Parameter ORANGE bound to: 16'b1111101111100000 
+	Parameter AQUAMARINE bound to: 16'b1000011111111100 
+	Parameter BLUE bound to: 16'b0000001110011100 
+	Parameter GREY bound to: 16'b1011110111110111 
+	Parameter WHITE bound to: 16'b1111111111111111 
+	Parameter PINK bound to: 16'b1111101100011000 
+	Parameter BLACK bound to: 16'b0000000000000000 
+	Parameter SILVER bound to: 16'b1100011000011000 
+	Parameter BEIGE bound to: 16'b1100111000110001 
+INFO: [Synth 8-6155] done synthesizing module 'tuner_display' (27#1) [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/tuner_display.v:23]
+WARNING: [Synth 8-689] width (8) of port connection 'SHIFT' does not match port width (7) of module 'tuner_display' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/imports/EE2026/Lab 5 Project/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:116]
+WARNING: [Synth 8-689] width (1) of port connection 'isInRange' does not match port width (7) of module 'tuner_display' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/imports/EE2026/Lab 5 Project/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:116]
+INFO: [Synth 8-6157] synthesizing module 'clk6p25m' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/imports/EE2026/Lab 5 Project/SoundDisplay/SoundDisplay.srcs/sources_1/new/clk6p25m.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clk6p25m' (28#1) [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/imports/EE2026/Lab 5 Project/SoundDisplay/SoundDisplay.srcs/sources_1/new/clk6p25m.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pixel_coords' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/pixel_coords.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_coords' (29#1) [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/pixel_coords.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/imports/EE2026/Lab 5 Project/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:36]
+	Parameter Width bound to: 96 - type: integer 
+	Parameter Height bound to: 64 - type: integer 
+	Parameter PixelCount bound to: 6144 - type: integer 
+	Parameter PixelCountWidth bound to: 13 - type: integer 
+	Parameter ClkFreq bound to: 6250000 - type: integer 
+	Parameter FrameFreq bound to: 60 - type: integer 
+	Parameter FrameDiv bound to: 104166 - type: integer 
+	Parameter FrameDivWidth bound to: 17 - type: integer 
+	Parameter PowerDelay bound to: 20 - type: integer 
+	Parameter ResetDelay bound to: 3 - type: integer 
+	Parameter VccEnDelay bound to: 20 - type: integer 
+	Parameter StartupCompleteDelay bound to: 100 - type: integer 
+	Parameter MaxDelay bound to: 100 - type: integer 
+	Parameter MaxDelayCount bound to: 625000 - type: integer 
+	Parameter StateCount bound to: 32 - type: integer 
+	Parameter StateWidth bound to: 5 - type: integer 
+	Parameter PowerUp bound to: 5'b00000 
+	Parameter Reset bound to: 5'b00001 
+	Parameter ReleaseReset bound to: 5'b00011 
+	Parameter EnableDriver bound to: 5'b00010 
+	Parameter DisplayOff bound to: 5'b00110 
+	Parameter SetRemapDisplayFormat bound to: 5'b00111 
+	Parameter SetStartLine bound to: 5'b00101 
+	Parameter SetOffset bound to: 5'b00100 
+	Parameter SetNormalDisplay bound to: 5'b01100 
+	Parameter SetMultiplexRatio bound to: 5'b01101 
+	Parameter SetMasterConfiguration bound to: 5'b01111 
+	Parameter DisablePowerSave bound to: 5'b01110 
+	Parameter SetPhaseAdjust bound to: 5'b01010 
+	Parameter SetDisplayClock bound to: 5'b01011 
+	Parameter SetSecondPrechargeA bound to: 5'b01001 
+	Parameter SetSecondPrechargeB bound to: 5'b01000 
+	Parameter SetSecondPrechargeC bound to: 5'b11000 
+	Parameter SetPrechargeLevel bound to: 5'b11001 
+	Parameter SetVCOMH bound to: 5'b11011 
+	Parameter SetMasterCurrent bound to: 5'b11010 
+	Parameter SetContrastA bound to: 5'b11110 
+	Parameter SetContrastB bound to: 5'b11111 
+	Parameter SetContrastC bound to: 5'b11101 
+	Parameter DisableScrolling bound to: 5'b11100 
+	Parameter ClearScreen bound to: 5'b10100 
+	Parameter VccEn bound to: 5'b10101 
+	Parameter DisplayOn bound to: 5'b10111 
+	Parameter PrepareNextFrame bound to: 5'b10110 
+	Parameter SetColAddress bound to: 5'b10010 
+	Parameter SetRowAddress bound to: 5'b10011 
+	Parameter WaitNextFrame bound to: 5'b10001 
+	Parameter SendPixel bound to: 5'b10000 
+	Parameter SpiCommandMaxWidth bound to: 40 - type: integer 
+	Parameter SpiCommandBitCountWidth bound to: 6 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/imports/EE2026/Lab 5 Project/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:124]
+INFO: [Synth 8-226] default block is never used [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/imports/EE2026/Lab 5 Project/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:201]
+WARNING: [Synth 8-693] zero replication count - replication ignored [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/imports/EE2026/Lab 5 Project/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:349]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (30#1) [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/imports/EE2026/Lab 5 Project/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (31#1) [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/imports/EE2026/Lab 5 Project/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:18]
+WARNING: [Synth 8-3917] design Top_Student has port dp driven by constant 1
+WARNING: [Synth 8-3331] design tuner_display has unconnected port clk
+WARNING: [Synth 8-3331] design menu_midi has unconnected port clk
+WARNING: [Synth 8-3331] design menu_goku has unconnected port clk
+WARNING: [Synth 8-3331] design menu_music has unconnected port clk
+WARNING: [Synth 8-3331] design menu_vol has unconnected port clk
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[14]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[13]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[12]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[11]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[10]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[9]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[8]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[7]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 454.719 ; gain = 197.785
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 454.719 ; gain = 197.785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 454.719 ; gain = 197.785
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/constrs_1/imports/new/Basys3_Master.xdc]
+Finished Parsing XDC File [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/constrs_1/imports/new/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/constrs_1/imports/new/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Student_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Student_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 818.070 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 818.070 ; gain = 561.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 818.070 ; gain = 561.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 818.070 ; gain = 561.137
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "SCLOCK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "SCLOCK0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "SCLOCK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SCLOCK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "SOUND3" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SOUND3" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NOTE3" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NOTE3" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "HAIR2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "HAIR2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NOTE3" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NOTE3" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "SCLOCK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "fourth8" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/oledvolume.v:52]
+INFO: [Synth 8-5544] ROM "SHIFT" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "HAIR2" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "progress0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/note_determiner.v:52]
+INFO: [Synth 8-5545] ROM "note10" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "note10" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "direction" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "COLOR" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "COLOR" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "NOTE5" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SHARP" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Oled_Display'
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "fsm_next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 PowerUp | 00000000100000000000000000000000 |                            00000
+                   Reset | 00000000000100000000000000000000 |                            00001
+            ReleaseReset | 00000000000000000000100000000000 |                            00011
+            EnableDriver | 00000000000000000001000000000000 |                            00010
+              DisplayOff | 00000000000000000100000000000000 |                            00110
+   SetRemapDisplayFormat | 00000100000000000000000000000000 |                            00111
+            SetStartLine | 00001000000000000000000000000000 |                            00101
+               SetOffset | 10000000000000000000000000000000 |                            00100
+        SetNormalDisplay | 00000000000000000000000010000000 |                            01100
+       SetMultiplexRatio | 00000000000000000000000000100000 |                            01101
+  SetMasterConfiguration | 00000000000000000000000001000000 |                            01111
+        DisablePowerSave | 00000000000000000000000000000100 |                            01110
+          SetPhaseAdjust | 00000000000000000000000000001000 |                            01010
+         SetDisplayClock | 00000000001000000000000000000000 |                            01011
+     SetSecondPrechargeA | 00000000010000000000000000000000 |                            01001
+     SetSecondPrechargeB | 01000000000000000000000000000000 |                            01000
+     SetSecondPrechargeC | 00000010000000000000000000000000 |                            11000
+       SetPrechargeLevel | 00000001000000000000000000000000 |                            11001
+                SetVCOMH | 00000000000000010000000000000000 |                            11011
+        SetMasterCurrent | 00000000000000100000000000000000 |                            11010
+            SetContrastA | 00000000000001000000000000000000 |                            11110
+            SetContrastB | 00100000000000000000000000000000 |                            11111
+            SetContrastC | 00000000000000000000000000000001 |                            11101
+        DisableScrolling | 00000000000000000000000000000010 |                            11100
+             ClearScreen | 00000000000000000000000000010000 |                            10100
+                   VccEn | 00010000000000000000000000000000 |                            10101
+               DisplayOn | 00000000000010000000000000000000 |                            10111
+        PrepareNextFrame | 00000000000000001000000000000000 |                            10110
+           SetColAddress | 00000000000000000000010000000000 |                            10010
+           SetRowAddress | 00000000000000000000000100000000 |                            10011
+           WaitNextFrame | 00000000000000000000001000000000 |                            10001
+               SendPixel | 00000000000000000010000000000000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Oled_Display'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 818.070 ; gain = 561.137
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 2     
+	   2 Input     22 Bit       Adders := 9     
+	   2 Input     18 Bit       Adders := 2     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 9     
+	   2 Input      7 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 11    
+	   2 Input      5 Bit       Adders := 11    
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 5     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               24 Bit    Registers := 2     
+	               22 Bit    Registers := 9     
+	               18 Bit    Registers := 2     
+	               17 Bit    Registers := 1     
+	               12 Bit    Registers := 4     
+	               10 Bit    Registers := 24    
+	                7 Bit    Registers := 4     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 35    
++---Multipliers : 
+	                 6x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 4     
+	  76 Input     32 Bit        Muxes := 1     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input     22 Bit        Muxes := 9     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 2     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 27    
+	  43 Input     16 Bit        Muxes := 1     
+	  49 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 3     
+	  75 Input     16 Bit        Muxes := 1     
+	  48 Input     16 Bit        Muxes := 1     
+	   5 Input     16 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 4     
+	 102 Input     16 Bit        Muxes := 1     
+	 124 Input     16 Bit        Muxes := 1     
+	 135 Input     16 Bit        Muxes := 1     
+	  76 Input     14 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 12    
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 3     
+	   3 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 13    
+	  11 Input      7 Bit        Muxes := 3     
+	  12 Input      7 Bit        Muxes := 1     
+	   5 Input      7 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 9     
+	   6 Input      5 Bit        Muxes := 1     
+	  32 Input      5 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 2     
+	  16 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 7     
+	   2 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 27    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Top_Student 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module clk20k 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clk_custom 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Audio_Capture 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
+Module slow_blinky_module 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     22 Bit       Adders := 1     
++---Registers : 
+	               22 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     22 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module dflipflop 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module clk4hz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module menu_vol 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	  43 Input     16 Bit        Muxes := 1     
+Module menu_music 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	  49 Input     16 Bit        Muxes := 1     
+Module menu_goku 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	  75 Input     16 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+Module menu_midi 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	  48 Input     16 Bit        Muxes := 1     
+Module menu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   5 Input     16 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clk381hz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
++---Registers : 
+	               18 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module segmentdisplay 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+Module clk8hz 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module maxvolume 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	  16 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module volumedisplay 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      7 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 9     
+	   2 Input      5 Bit        Muxes := 1     
+Module multiplexer 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module oledvolume 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 18    
+	   3 Input     16 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module goku_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 10    
+	   2 Input      5 Bit       Adders := 11    
+	   2 Input      4 Bit       Adders := 3     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	 102 Input     16 Bit        Muxes := 1     
+Module supersaiyan 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module midi_display 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 24    
++---Muxes : 
+	 124 Input     16 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 12    
+Module mic_freq 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module note_determiner 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	  76 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	  76 Input     14 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 1     
+Module display_freq 
+Detailed RTL Component Info : 
++---Muxes : 
+	  11 Input      7 Bit        Muxes := 3     
+	  12 Input      7 Bit        Muxes := 1     
+	   5 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 3     
+Module tuner 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Multipliers : 
+	                 6x32  Multipliers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module tuner_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 6     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	 135 Input     16 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 7     
+Module clk6p25m 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module Oled_Display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "SCLOCK0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "SOUND3" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NOTE3" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "HAIR2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NOTE3" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "sclock/SCLOCK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "left/sclock/SCLOCK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "right/sclock/SCLOCK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "menuselect/sclock/SCLOCK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "select/sclock/SCLOCK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "frames/SCLOCK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "segmentclk/SCLOCK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sclock/SCLOCK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "shiftleft/sclock/SCLOCK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "shiftright/sclock/SCLOCK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "frames/SCLOCK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'note12_reg[9:0]' into 'note12_reg[9:0]' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:67]
+INFO: [Synth 8-4471] merging register 'note11_reg[9:0]' into 'note11_reg[9:0]' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:66]
+INFO: [Synth 8-4471] merging register 'note10_reg[9:0]' into 'note10_reg[9:0]' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:65]
+INFO: [Synth 8-4471] merging register 'note9_reg[9:0]' into 'note9_reg[9:0]' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:64]
+INFO: [Synth 8-4471] merging register 'note8_reg[9:0]' into 'note8_reg[9:0]' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:63]
+INFO: [Synth 8-4471] merging register 'note7_reg[9:0]' into 'note7_reg[9:0]' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:62]
+INFO: [Synth 8-4471] merging register 'note6_reg[9:0]' into 'note6_reg[9:0]' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:61]
+INFO: [Synth 8-4471] merging register 'note5_reg[9:0]' into 'note5_reg[9:0]' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:60]
+INFO: [Synth 8-4471] merging register 'note4_reg[9:0]' into 'note4_reg[9:0]' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:59]
+INFO: [Synth 8-4471] merging register 'note3_reg[9:0]' into 'note3_reg[9:0]' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:58]
+INFO: [Synth 8-4471] merging register 'note2_reg[9:0]' into 'note2_reg[9:0]' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:57]
+INFO: [Synth 8-4471] merging register 'note1_reg[9:0]' into 'note1_reg[9:0]' [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:56]
+WARNING: [Synth 8-6014] Unused sequential element note12_reg was removed.  [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:67]
+WARNING: [Synth 8-6014] Unused sequential element note11_reg was removed.  [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:66]
+WARNING: [Synth 8-6014] Unused sequential element note10_reg was removed.  [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:65]
+WARNING: [Synth 8-6014] Unused sequential element note9_reg was removed.  [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:64]
+WARNING: [Synth 8-6014] Unused sequential element note8_reg was removed.  [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:63]
+WARNING: [Synth 8-6014] Unused sequential element note7_reg was removed.  [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:62]
+WARNING: [Synth 8-6014] Unused sequential element note6_reg was removed.  [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:61]
+WARNING: [Synth 8-6014] Unused sequential element note5_reg was removed.  [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:60]
+WARNING: [Synth 8-6014] Unused sequential element note4_reg was removed.  [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:59]
+WARNING: [Synth 8-6014] Unused sequential element note3_reg was removed.  [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:58]
+WARNING: [Synth 8-6014] Unused sequential element note2_reg was removed.  [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:57]
+WARNING: [Synth 8-6014] Unused sequential element note1_reg was removed.  [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/midi_display.v:56]
+WARNING: [Synth 8-6014] Unused sequential element slowclk/SCLOCK_reg was removed.  [D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.srcs/sources_1/new/clk12hz.v:29]
+INFO: [Synth 8-5546] ROM "segmentclk/SCLOCK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "COLOR" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk20khz/SCLOCK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "resetbutton/sclock/SCLOCK0" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design Top_Student has port dp driven by constant 1
+WARNING: [Synth 8-3331] design tuner_display has unconnected port clk
+WARNING: [Synth 8-3331] design menu_midi has unconnected port clk
+WARNING: [Synth 8-3331] design menu_goku has unconnected port clk
+WARNING: [Synth 8-3331] design menu_music has unconnected port clk
+WARNING: [Synth 8-3331] design menu_vol has unconnected port clk
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[14]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[13]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[12]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[11]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[10]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[9]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[8]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[7]
+INFO: [Synth 8-3886] merging instance 'freq/FREQ_reg[2]' (FDSE) to 'freq/FREQ_reg[1]'
+INFO: [Synth 8-3886] merging instance 'freq/FREQ_reg[0]' (FDSE) to 'freq/FREQ_reg[1]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 818.070 ; gain = 561.137
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:04 ; elapsed = 00:01:07 . Memory (MB): peak = 818.070 ; gain = 561.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 818.070 ; gain = 561.137
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:08 ; elapsed = 00:01:12 . Memory (MB): peak = 1018.465 ; gain = 761.531
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:10 ; elapsed = 00:01:14 . Memory (MB): peak = 1018.465 ; gain = 761.531
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:10 ; elapsed = 00:01:14 . Memory (MB): peak = 1018.465 ; gain = 761.531
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:10 ; elapsed = 00:01:14 . Memory (MB): peak = 1018.465 ; gain = 761.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 1018.465 ; gain = 761.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 1018.465 ; gain = 761.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 1018.465 ; gain = 761.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     4|
+|2     |CARRY4 |   748|
+|3     |LUT1   |   105|
+|4     |LUT2   |  1129|
+|5     |LUT3   |   934|
+|6     |LUT4   |   687|
+|7     |LUT5   |   574|
+|8     |LUT6   |  1836|
+|9     |MUXF7  |    31|
+|10    |MUXF8  |     1|
+|11    |FDCE   |    29|
+|12    |FDRE   |   750|
+|13    |FDRE_1 |    31|
+|14    |FDSE   |     8|
+|15    |FDSE_1 |     1|
+|16    |IBUF   |    15|
+|17    |OBUF   |    37|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------+----------------------+------+
+|      |Instance            |Module                |Cells |
++------+--------------------+----------------------+------+
+|1     |top                 |                      |  6920|
+|2     |  audio             |Audio_Capture         |    71|
+|3     |  clk180bpm         |clk_custom            |    63|
+|4     |  clk20khz          |clk20k                |    22|
+|5     |  clkled            |clk6p25m              |     9|
+|6     |  dip_freq          |display_freq          |  1691|
+|7     |    nolabel_line100 |segmentdisplay_28     |   247|
+|8     |    segmentclk      |clk381hz_29           |    30|
+|9     |  freq              |mic_freq              |  1574|
+|10    |  goku_game         |supersaiyan           |    71|
+|11    |    frames          |clk4hz_27             |    40|
+|12    |    goku            |goku_display          |     1|
+|13    |  menudisplay       |menu                  |   272|
+|14    |    frames          |clk4hz                |    40|
+|15    |    left            |flipflop_10           |    42|
+|16    |      dff1          |dflipflop_24          |     3|
+|17    |      dff2          |dflipflop_25          |     2|
+|18    |      sclock        |slow_blinky_module_26 |    37|
+|19    |    menuselect      |flipflop_11           |    42|
+|20    |      dff1          |dflipflop_21          |     4|
+|21    |      dff2          |dflipflop_22          |     1|
+|22    |      sclock        |slow_blinky_module_23 |    37|
+|23    |    right           |flipflop_12           |    41|
+|24    |      dff1          |dflipflop_18          |     3|
+|25    |      dff2          |dflipflop_19          |     1|
+|26    |      sclock        |slow_blinky_module_20 |    37|
+|27    |    sclock          |slow_blinky_module_13 |    37|
+|28    |    select          |flipflop_14           |    42|
+|29    |      dff1          |dflipflop_15          |     4|
+|30    |      dff2          |dflipflop_16          |     1|
+|31    |      sclock        |slow_blinky_module_17 |    37|
+|32    |  midi              |midi_display          |   128|
+|33    |  oled              |Oled_Display          |  1405|
+|34    |  resetbutton       |flipflop              |    42|
+|35    |    dff1            |dflipflop_7           |     3|
+|36    |    dff2            |dflipflop_8           |     2|
+|37    |    sclock          |slow_blinky_module_9  |    37|
+|38    |  switch            |multiplexer           |    16|
+|39    |  tuner             |tuner                 |  1026|
+|40    |  volume            |volumedisplay         |   154|
+|41    |    nolabel_line76  |segmentdisplay        |    20|
+|42    |    nolabel_line78  |maxvolume             |    66|
+|43    |    segmentclk      |clk381hz              |    30|
+|44    |    slowclk         |clk8hz                |    38|
+|45    |  volumebar         |oledvolume            |   148|
+|46    |    sclock          |slow_blinky_module    |    37|
+|47    |    shiftleft       |flipflop_0            |    42|
+|48    |      dff1          |dflipflop_4           |     1|
+|49    |      dff2          |dflipflop_5           |     4|
+|50    |      sclock        |slow_blinky_module_6  |    37|
+|51    |    shiftright      |flipflop_1            |    45|
+|52    |      dff1          |dflipflop             |     6|
+|53    |      dff2          |dflipflop_2           |     2|
+|54    |      sclock        |slow_blinky_module_3  |    37|
++------+--------------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 1018.465 ; gain = 761.531
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 27 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:57 ; elapsed = 00:01:05 . Memory (MB): peak = 1018.465 ; gain = 398.180
+Synthesis Optimization Complete : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 1018.465 ; gain = 761.531
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 827 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  FDRE_1 => FDRE (inverted pins: C): 31 instances
+  FDSE_1 => FDSE (inverted pins: C): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+143 Infos, 60 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:14 ; elapsed = 00:01:18 . Memory (MB): peak = 1018.465 ; gain = 774.590
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/NUS/EE2026/finalProject/Project Added menu icons and changed midi.xpr/oledvolume/oledvolume.runs/synth_1/Top_Student.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_Student_utilization_synth.rpt -pb Top_Student_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1018.465 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Apr  5 03:54:06 2021...
