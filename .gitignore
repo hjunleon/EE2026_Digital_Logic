@@ -33,3 +33,5 @@ vsim.dbg
 
 *.log
 *.jou
+
+*.rpt
